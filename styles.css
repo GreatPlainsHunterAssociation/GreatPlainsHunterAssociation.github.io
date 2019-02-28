@@ -13,16 +13,16 @@ body {
 }
 
 .about {
-    padding: 5% 10%;
+    padding: 5% 0%;
 }
 
 .becomeamember {
-    padding: 5% 10%;
+    padding: 5% 0%;
     background-color: #f5f5f5;
 }
 
 .footer {
-    padding: 5% 10%;
+    padding: 5% 0%;
     background-color: #0e1015;
     color: #fff;
 }
