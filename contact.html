@@ -65,19 +65,19 @@
                         <form action="https://formspree.io/justin@kelleher.us" method="POST">
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Name*</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" required>
+                                <input type="text" name="name" class="form-control" id="exampleFormControlInput1" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Email address*</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                                <input type="email" name="_replyto" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Phone</label>
-                                <input type="phone" class="form-control" id="exampleFormControlInput1">
+                                <input type="phone" name="phone" class="form-control" id="exampleFormControlInput1">
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlTextarea1">Message*</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                             </div>
                             <input type="submit" class="btn btn-primary" value="Send">
                         </form>
