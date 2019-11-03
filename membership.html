@@ -336,7 +336,7 @@
                               </div>
                           </div>
                           <h3>Please Read and Sign</h3>
-                          <p>I agree to participate, or my child/children _______________________________________________ has my permission to participate in any GPHA show for the year 2019.  Every class entry at a GPHA competition shall constitute an agreement and affirmation that all participants (which include without limitation, the owner, lessee, trainer, manager, agent, coach, driver, handler, rider and the horse) for themselves, their principle, representatives, employees and agents: (1) Agree to hold the competition, it’s managers, officials, employees, agents, the facility owners and operators, and the GPHA Committee members harmless from and against all claims
+                          <p>I agree to participate, or my child/children <span id="result"></span> has my permission to participate in any GPHA show for the year 2019.  Every class entry at a GPHA competition shall constitute an agreement and affirmation that all participants (which include without limitation, the owner, lessee, trainer, manager, agent, coach, driver, handler, rider and the horse) for themselves, their principle, representatives, employees and agents: (1) Agree to hold the competition, it’s managers, officials, employees, agents, the facility owners and operators, and the GPHA Committee members harmless from and against all claims
 and risks of injury or loss, and they agree to indemnify GPHA and it’s Committee members harmless from against all claims including any injury or loss suffered during
 or in connection with the competition, whether or not such injury, claim or loss resulted directly or indirectly, from the negligent acts or omissions of said competition,
 its employees and agents or the facility owners and operators.</p>
@@ -370,5 +370,13 @@ as surface and subsurface conditions: (4) Collisions with other domestic animals
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script>
+          $( document ).ready(function() {
+            $("#rider-name").keyup(function() {
+    		        var riderName = $('#rider-name').val();
+    		        $('#result').html(riderName);
+  	        });
+          });
+        </script>
     </body>
 </html>
