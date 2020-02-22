@@ -48,6 +48,10 @@ body {
     border-radius: 50%;
 }
 
+.sociallinks a:hover {
+    text-decoration: none;
+}
+
 .navbar {
     background-color: #fff;
 }
